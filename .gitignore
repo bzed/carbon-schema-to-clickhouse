@@ -1,3 +1,4 @@
 carbon-schema-to-clickhouse
 *.swp
 storage-schemas.conf
+_vendor
