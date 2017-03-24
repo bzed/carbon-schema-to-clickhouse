@@ -14,7 +14,7 @@ $(NAME):
 
 clean:
 	rm -f $(NAME)
-test:
+test: $(NAME)
 	go vet *.go
 
 .PHONY: clean test
