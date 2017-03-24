@@ -24,7 +24,7 @@ func printSchemaXML(schema persister.Schema, rollupFunction string, default_sche
 		fmt.Printf("\t\t<%s>\n", "retention")
 		retention := schema.Retentions[j]
 		fmt.Printf("\t\t\t<age>%d</age>\n", lastAge)
-		lastAge = retention.NumberOfPoints()
+		lastAge = retention.NumberOfPoints() * retention.SecondsPerPoint()
 		fmt.Printf("\t\t\t<precision>%d</precision>\n", retention.SecondsPerPoint())
 		fmt.Printf("\t\t</%s>\n", "retention")
 	}
