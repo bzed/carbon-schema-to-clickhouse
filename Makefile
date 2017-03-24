@@ -3,8 +3,6 @@
 NAME:=carbon-schema-to-clickhouse
 
 GO ?= go
-export GOPATH := $(CURDIR)/_vendor
-
 
 all: $(NAME)
 
