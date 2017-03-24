@@ -1,4 +1,5 @@
-# carbon-schema-to-clickhouse
+# carbon-schema-to-clickhouse [![Build Status](https://api.travis-ci.org/bzed/carbon-schema-to-clickhouse.svg?branch=master)](https://travis-ci.org/bzed/carbon-schema-to-clickhouse/)
+
 Converts storage-schema.conf from graphite/carbon to clickhouse graphite_rollup XML
 
 Migrating our `storage-schemas.conf` from an older graphite implementation to
